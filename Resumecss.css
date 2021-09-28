@@ -1,0 +1,411 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+/* Body Header */
+#body-header{
+    height: 65vh;
+    background-image: url(Assets/background.svg);
+    background-size: cover;
+    background-position: center;
+      
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+/* Horizontal List */
+.horizontalList{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+   
+}
+.horizontalList li{
+    display: inline-block;
+    margin: 15px 10px 10px 15px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+    
+}
+.horizontalList a{
+    color: white;
+
+    text-decoration: none;
+    
+}
+.nav-menu li a{
+    transition: color 0.5s,border-bottom 4s ;
+}
+.nav-menu a:hover{
+    color: grey;
+    border-bottom: 1px solid black;
+}
+
+.text-center{
+    text-align: center;
+}
+/* Name and Social Icons */
+#social-container{
+    margin-top: 12vh;
+}
+#my-name {
+    font-size: 4rem ;
+    letter-spacing: 0.2rem;
+    color:white; 
+     margin-bottom: -0.5rem;
+} 
+.social-icons li {
+    border-radius: 50%;
+}
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+/* .social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(184, 43, 202, 0.5) ;
+} */
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(184, 43, 202, 0.5) ;
+}
+/* Section Classes */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n)
+{
+    background-color: wheat;
+}
+section:nth-child(2n+1)
+{
+    background-color: beige;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color:#232342;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+
+}
+/* About Me  */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height:12rem;
+    width:12rem;
+    margin:auto;
+    margin-top:-16vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow:0px 0px 6px 4px rgba(184, 43, 202, 0.5) ;
+}
+.about-para{
+    padding:10px;
+    width: 75%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    color: grey;
+
+}
+/* Skills Section */
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.skills-progress{
+    height: 2.2rem;
+    width: 11rem;
+    background-color: rgb(73, 73, 73);
+    border-radius: 1rem;
+    /* box-shadow: 1px 1px 2px 1px #888787 inset; */
+    margin: 30px;
+    overflow: hidden; 
+}
+.skills-progress > div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 5px 2px #989882;
+}
+.skill-name span{
+    color:white;
+    font-size: 1.5rem;
+    margin-left:10px;
+    vertical-align: middle;
+    word-wrap:normal;
+}
+
+/* PercentageClasses */
+.ninety{
+    width:90%;
+    height: inherit;
+    background-color: #232342;
+    margin: 0.5%;
+}
+.eighty-five{
+    width: 85%;
+    height: inherit;
+    background-color: #2e2e4d;
+    margin: 0.5%;
+}
+.sixty{
+    width: 60%;
+    height: inherit;
+    background-color: #3b3b81;
+    margin: 0.5%;
+}
+.twenty-five{
+    width: 25%;
+    height: inherit;
+    background-color: #83839c;
+    margin: 0.5%;
+}
+
+
+/* TimeLine */
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 15%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -12%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -7.4%;
+}
+
+.timeline-container {
+    padding: 5px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 90%;
+    width: 0;
+    border: 4px dashed rgb(102, 102, 102);
+    top: 5%;
+    left: 50%;
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+    color: #232342;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+
+
+/* Contact Form */
+
+#contact {
+    background-color: #0983ac;
+    background-image: linear-gradient(50deg, #2857a4 0%,#232342 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+
+}
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
